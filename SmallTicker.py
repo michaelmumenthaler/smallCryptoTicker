@@ -28,7 +28,7 @@ window = sg.Window(
     no_titlebar=True,
     grab_anywhere=True,
     return_keyboard_events=True,
-    location=(0, 0),
+    location=(1768, 972),
 )
 
 
@@ -53,7 +53,7 @@ while True:
             f"{symbols[symbolIndex]}: {json.loads(requests.get(url + symbols[symbolIndex]).text)['price']}",
         )
         counter = 0
-
+    # print(window.CurrentLocation())
     window["-OUTPUT-"](data)
     counter += 1
     if event == "f":
