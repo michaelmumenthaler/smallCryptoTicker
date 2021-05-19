@@ -35,6 +35,7 @@ window = sg.Window(
 # Create an event loop
 counter = 0
 symbolCounter = 0
+requestCounter = 0
 
 while True:
 
@@ -46,12 +47,14 @@ while True:
         symbolCounter += 1
 
     event, values = window.read(timeout=0.1)
-    if counter >= 1000:
+    if counter >= 100:
         data = re.sub(
             "0+$",
             "",
             f"{symbols[symbolIndex]}: {json.loads(requests.get(url + symbols[symbolIndex]).text)['price']}",
         )
+        requestCounter += 1
+        # print(requestCounter)
         counter = 0
     # print(window.CurrentLocation())
     window["-OUTPUT-"](data)
