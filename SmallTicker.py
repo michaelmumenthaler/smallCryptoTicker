@@ -1,5 +1,5 @@
 import PySimpleGUI as sg
-import requests, time, json, os
+import requests, time, json, os, re
 
 
 def loadSymbols():
@@ -47,7 +47,11 @@ while True:
 
     event, values = window.read(timeout=0.1)
     if counter >= 1000:
-        data = f"{symbols[symbolIndex]}: {json.loads(requests.get(url + symbols[symbolIndex]).text)['price'].replace('0000','')}"
+        data = re.sub(
+            "0+$",
+            "",
+            f"{symbols[symbolIndex]}: {json.loads(requests.get(url + symbols[symbolIndex]).text)['price']}",
+        )
         counter = 0
 
     window["-OUTPUT-"](data)
