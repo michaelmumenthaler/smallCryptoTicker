@@ -43,15 +43,15 @@ jobs:
       outputs:
         output:
           description: 'The output of PyInstaller'
-    runs:
-      using: 'docker'
-      image: 'Dockerfile'
-      args:
-        - ${{ inputs.path }}
-        - ${{ inputs.pypi_url }}
-        - ${{ inputs.pypi_index_url }}
-        - ${{ inputs.spec }}
-        - ${{ inputs.requirements }}
+      runs:
+        using: 'docker'
+        image: 'Dockerfile'
+        args:
+          - ${{ inputs.path }}
+          - ${{ inputs.pypi_url }}
+          - ${{ inputs.pypi_index_url }}
+          - ${{ inputs.spec }}
+          - ${{ inputs.requirements }}
   - uses: actions/upload-artifact@v2
     with:
       name: smallCryptoTicker
