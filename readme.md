@@ -1,5 +1,10 @@
 # Small Crypto Ticker
 
+![demo][]
+
+[demo]: https://github.com/michaelmumenthaler/smallCryptoTicker/blob/master/Assets/demo.gif
+
+
 A small ticker which shows the current prices for the cryptos you're interested in. \
 No clutter and a non disruptive interface. Ideal to just leave it running while you search for a nice residence on the moon.
 

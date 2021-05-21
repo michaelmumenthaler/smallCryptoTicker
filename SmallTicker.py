@@ -1,6 +1,13 @@
 import PySimpleGUI as sg
 import requests, time, json, os, re
 
+config = json.load(open("config.json"))
+
+
+def saveConfig(config):
+    with open("config.json", "w") as fp:
+        json.dump(config, fp)
+
 
 def loadSymbols():
     symbols = json.load(open("symbols.json"))["symbols"]
@@ -28,7 +35,7 @@ window = sg.Window(
     no_titlebar=True,
     grab_anywhere=True,
     return_keyboard_events=True,
-    location=(1768, 972),
+    location=(config["windowPositionX"], config["windowPositionY"]),  # (1768, 972),
 )
 
 
@@ -68,6 +75,8 @@ while True:
             counter = 1000
 
     if event == sg.WIN_CLOSED or event == "q":
+        config["windowPositionX"], config["windowPositionY"] = window.CurrentLocation()
+        saveConfig(config)
         break
 
 window.close()
