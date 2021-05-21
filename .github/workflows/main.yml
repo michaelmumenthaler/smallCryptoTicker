@@ -1,4 +1,4 @@
-name: Package Application with Pyinstaller
+name: Package Application with Pyinstaller - Windows
 
 on:
   push:
@@ -21,4 +21,3 @@ jobs:
     - uses: actions/upload-artifact@v2
       with:
         name: smallTicker
-        path: dist/windows
