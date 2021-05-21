@@ -2,7 +2,7 @@
 
 ![demo][]
 
-[demo]: https://github.com/michaelmumenthaler/smallCryptoTicker/blob/master/Assets/demo.gif
+[demo]: https://github.com/michaelmumenthaler/smallCryptoTicker/blob/master/Assets/demo.GIF
 
 
 A small ticker which shows the current prices for the cryptos you're interested in. \
