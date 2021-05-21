@@ -52,7 +52,6 @@ jobs:
         - ${{ inputs.pypi_index_url }}
         - ${{ inputs.spec }}
         - ${{ inputs.requirements }}
-
   - uses: actions/upload-artifact@v2
     with:
       name: smallCryptoTicker
