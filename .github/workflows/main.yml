@@ -1,4 +1,5 @@
-name: Package Application with Pyinstaller - Windows
+
+name: "Package Application with Pyinstaller - Windows"
 
 on:
   push:
