@@ -24,8 +24,8 @@ You can just add symbols in the symbols.json file while it is running and after 
 
 Note that the ticker must be in focus for the keys to work (click on it first).
 
-Q --> Close the window
-F --> Switch to the next symbol
+Q --> Close the window \
+F --> Switch to the next symbol \
 
 ## Will it steal my cryptos?
 
