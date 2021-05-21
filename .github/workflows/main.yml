@@ -21,8 +21,5 @@ jobs:
 
     - uses: actions/upload-artifact@v2
       with:
-        name: smallTicker
-        path: 
-        - src/dist/windows
-        - config.json
-        - symbols.json
+        name: smallCryptoTicker
+        path: src
