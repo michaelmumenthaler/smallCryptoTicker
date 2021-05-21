@@ -16,7 +16,7 @@ Then use the following command to start it: ``` python smallTicker.py ```
 
 ## Features
 
-You can just add symbols in the symbols.json file while it is running and after a few seconds the newly added symbol will be awailable in the ticker.
+You can just add symbols in the symbols.json file while it is running and after a few seconds the newly added symbol will be available in the ticker.
 
 # How to use it
 
@@ -24,8 +24,8 @@ You can just add symbols in the symbols.json file while it is running and after 
 
 Note that the ticker must be in focus for the keys to work (click on it first).
 
-Q --> Close the window \
-F --> Switch to the next symbol \
+Q &rarr; Close the window \
+F &rarr; Switch to the next symbol
 
 ## Will it steal my cryptos?
 
