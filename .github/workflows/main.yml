@@ -31,4 +31,4 @@ jobs:
         uses: JackMcKew/pyinstaller-action-windows@v0.1.2
         with:
           # Directory containing source code (optional requirements.txt).
-          path: .
+          path: src
