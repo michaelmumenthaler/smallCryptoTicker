@@ -1,3 +1,5 @@
+name: Package Application with Pyinstaller - Windows
+
 on:
   push:
     branches: [ master ]
@@ -11,7 +13,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Package Application with Pyinstaller - Windows
+    - name: Package Application
       description: 'Customisable GitHub Action to package your python code with PyInstaller for Windows'
       branding:
         icon: 'box'
