@@ -18,10 +18,14 @@ Then use the following command to start it: ``` python smallTicker.py ```
 
 You can just add symbols in the symbols.json file while it is running and after a few seconds the newly added symbol will be awailable in the ticker.
 
-## How to use it
+# How to use it
 
-While the ticker is running you can quit it by pressing "Q" on your keyboard, to switch to the next symbol press the "F" key. \ 
+## Keyboard Shortcuts
+
 Note that the ticker must be in focus for the keys to work (click on it first).
+
+Q --> Close the window
+F --> Switch to the next symbol
 
 ## Will it steal my cryptos?
 
